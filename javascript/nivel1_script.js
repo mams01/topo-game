@@ -1031,7 +1031,7 @@ function optionMusica(){
     if (document.getElementById("musica").onclick){
         document.getElementById("musica").style.display = "none";
         document.getElementById("pausa-play").style.display = "block";
-        document.getElementById("stop").style.display = "block";
+        //document.getElementById("stop").style.display = "block";
     }
 }
 
