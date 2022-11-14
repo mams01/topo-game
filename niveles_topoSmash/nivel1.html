@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOPO SMASH</title>
+    <link rel="stylesheet" href="../estilos/nivel1_estilos.css">
+    <link rel="stylesheet" href="../estilos/estilosInicioJuego.css">
+    <link rel="stylesheet" href="../estilos/alperder.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Zen+Loop&display=swap" rel="stylesheet">
+</head>
+<body onload="mueveReloj()">
+    
+        <div id="contenedorInicioJuego">
+            
+            <article background="fondo/fondo.jpg">
+                <h1><span>T</span><span>O</span><span>P</span><span>O</span><br><span>S</span><span>
+                </span><span>M</span><span>A</span><span>S</span><span>H</span><span>
+                </span> <br>
+                <div class="wrapper">
+                    <a class="button" id="iniciarJuego" onclick="iniciarJuego()" href="#">INICIAR - NIVEL 1</a> <br>
+                </div>
+                <div id="topoPortada">
+                    <img src="../imagenes/topo-portada.png" height="200" width=" 300" alt="">
+                </div>
+            
+                
+            
+                <!-- Filter: https://css-tricks.com/gooey-effect/ -->
+                <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                            <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                        </filter>
+                    </defs>
+                </svg>
+                
+                
+            </article>
+        
+        </div>
+    <div  id="contenedorInicioNivel1">
+        <div  id="fondo-de-pantalla">
+                <div id="contenedor-texto-nivel" >
+                    <p id="texto-nivel">
+                        &nbsp;N <br>
+                        &nbsp;I <br>
+                        &nbsp;V <br>
+                        &nbsp;E <br>
+                        &nbsp;L <br>
+                          <br>
+                        &nbsp;1 <br>
+                    </p>
+                </div>
+                <div class="contenedor" >
+                    <div class="posicion1">
+                        <img  src="../imagenes/hueco.png" alt="hueco" id="hueco">               <!-- IMAGEN HUECO -->
+                        <img  src="../imagenes/señorTopo.gif" alt="topo" id="topo1" onclick="general1()"  >        <!-- IMAGEN TOPO -->
+                        <div id="hp-topo1" ><p id="hp1"> 3 hp</p></div>                          <!--  BARRA DE VIDA DE TOPO -->
+                        <div id="rip1"> </div>                                                   <!-- TUMBA AL MORIR -->
+                        <div id="golpe1"></div>                                                  <!-- EFECTO DE POW AL RECIBIR GOLPE -->
+                    </div>
+                    <div class="posicion1">
+                        <img  src="../imagenes/hueco.png" alt="hueco" id="hueco">
+                        <img  src="../imagenes/señorTopo.gif" alt="topo" id="topo2" onclick="general2()" >
+                        <div id="hp-topo2" ><p id="hp2"> 3 hp</p></div>
+                        <div id="rip2"> </div>
+                        <div id="golpe2"></div>
+                    </div>
+                    <div class="posicion1">
+                        <img  src="../imagenes/hueco.png" alt="hueco" id="hueco">
+                        <img  src="../imagenes/señorTopo.gif" alt="topo" id="topo3" onclick="general3()" >
+                        <div id="hp-topo3" ><p id="hp3"> 3 hp</p></div>
+                        <div id="rip3"> </div>
+                        <div id="golpe3"></div>
+                    </div>
+                    <div class="posicion1">
+                        <img  src="../imagenes/hueco.png" alt="hueco" id="hueco">
+                        <img  src="../imagenes/señorTopo.gif" alt="topo" id="topo4" onclick="general4()">
+                        <div id="hp-topo4" ><p id="hp4"> 3 hp</p></div>
+                        <div id="rip4"> </div>
+                        <div id="golpe4"></div>
+                    </div>
+                    <div class="posicion1">
+                        <img  src="../imagenes/hueco.png" alt="hueco" id="hueco">
+                        <img  src="../imagenes/señorTopo.gif" alt="topo" id="topo5" onclick="general5()">
+                        <div id="hp-topo5" ><p id="hp5"> 3 hp</p></div>
+                        <div id="rip5"> </div>
+                        <div id="golpe5"></div>
+                    </div>
+                    <div class="posicion1">
+                        <img  src="../imagenes/hueco.png" alt="hueco" id="hueco">
+                        <img  src="../imagenes/señorTopo.gif" alt="topo" id="topo6" onclick="general6()">
+                        <div id="hp-topo6" ><p id="hp6"> 3 hp</p></div>
+                        <div id="rip6"> </div>
+                        <div id="golpe6"></div>
+                    </div>
+                    <div class="posicion1">
+                        <img  src="../imagenes/hueco.png" alt="hueco" id="hueco">
+                        <img  src="../imagenes/señorTopo.gif" alt="topo" id="topo7" onclick="general7()">
+                        <div id="hp-topo7" ><p id="hp7"> 3 hp</p></div>
+                        <div id="rip7"> </div>
+                        <div id="golpe7"></div>
+                    </div>
+                    <div class="posicion1">
+                        <img  src="../imagenes/hueco.png" alt="hueco" id="hueco">
+                        <img  src="../imagenes/señorTopo.gif" alt="topo" id="topo8" onclick="general8()">
+                        <div id="hp-topo8" ><p id="hp8"> 3 hp</p></div>
+                        <div id="rip8"> </div>
+                        <div id="golpe8"></div>
+                    </div>
+                    <div class="posicion1">
+                        <img  src="../imagenes/hueco.png" alt="hueco" id="hueco">
+                        <img  src="../imagenes/señorTopo.gif" alt="topo" id="topo9" onclick="general9()">
+                        <div id="hp-topo9" ><p id="hp9"> 3 hp</p></div>
+                        <div id="rip9"> </div>
+                        <div id="golpe9"></div>
+                    </div>
+                    <div class="posicion1">
+                        <img  src="../imagenes/hueco.png" alt="hueco" id="hueco">
+                        <img  src="../imagenes/señorTopo.gif" alt="topo" id="topo10" onclick="general10()">
+                        <div id="hp-topo10" ><p id="hp10"> 3 hp</p></div>
+                        <div id="rip10"> </div>
+                        <div id="golpe10"></div>
+                    </div>
+                    <div class="posicion1">
+                        <img  src="../imagenes/hueco.png" alt="hueco" id="hueco">
+                        <img  src="../imagenes/señorTopo.gif" alt="topo" id="topo11" onclick="general11()">
+                        <div id="hp-topo11" ><p id="hp11"> 3 hp</p></div>
+                        <div id="rip11"> </div>
+                        <div id="golpe11"></div>
+                    </div>
+                    <div class="posicion1">
+                        <img  src="../imagenes/hueco.png" alt="hueco" id="hueco">
+                        <img  src="../imagenes/señorTopo.gif" alt="topo" id="topo12" onclick="general12()">
+                        <div id="hp-topo12" ><p id="hp12"> 3 hp</p></div>
+                        <div id="rip12"> </div>
+                        <div id="golpe12"></div>
+                    </div>
+                    <!-- --------------------------------------------------------------AL PASAR DE NIVEL ------------------- -->
+                    <div>
+                        <div id="pasar_de_nivel"></div>
+                    </div>
+                
+                
+                </div>
+                <!-- CONTENEDOR LATERAL DERECHO -->
+                <div class="contenedor2" >
+                    <div id="puntuacion">
+
+                    </div>
+                    <div class="contenedor2-1">
+                        <div id="tiempo">
+                    
+                        </div>
+                        <div id="puntos"> 
+                            <p>PUNTOS &nbsp;&nbsp;&nbsp;&nbsp;0/50</p><!-- inicial -->
+                        </div>
+                    </div>
+                    <div id="contenedor2-2">  <!-- CONTENEDOR PARA PAUSAR / REPRODUCIR Y COLOCAR EN STOP A LA MUSICA DE FONDO -->
+                        <button id="musica" onclick="optionMusica()"><a href="#">MUSIC</a> </button>      <!--  BOTON MUSICA AL DARLE CLICK SE TRANSFORMA -->
+                        <p id="pausa-play" onclick="musicaFondo()">PAUSE</p>        <!--  TEXTO PAUSA / PLAY CON FUNCION PARA REPRODUCIR LA MUSICA -->
+                        <!-- <p id="stop" onclick="stop()">stop</p>   -->                           <!--  TEXTO STOP PARA DETENER LA REPRODUCCION DE MUSICA -->
+                    </div> 
+                    <div id="creditos">
+                        <button><a  href="Creditos.html"><p>CREDITOS</p></a></button>
+                    </div>
+                    <div id="reloj">
+                        <form name="form_reloj">
+                            <!-- <input type="text" name="reloj" size="10"> -->
+                            <input type="text" name="reloj" size="10" >
+                        </form>
+                    </div>
+                    
+                </div>
+                
+            
+            
+            
+            
+        </div> 
+    </div>
+    <div id="fondo_perdistes">
+        <div id="contenedorPerdistesJuego">
+            <div id="bienvenidosNivel2">
+                <p id="perdistesNivel-1">uppps!! lo siento perdistes.</p>
+                <button id="reiniciarNivel" onclick="reiniciarNivel()"><p id="text-nivel1">VOLVER A INTENTARLO</p> </button>
+                <button id="salir" onclick="salir()"><p id="text-nivel1">SALIR</p> </button>
+            </div>
+        </div> 
+    </div>
+    
+    <script src="../javascript/puntuacion.js" ></script>
+
+    <script  src="../javascript/nivel1_script.js" >         /*  ENLACE DE ARCHIVO JAVASCRIPT */
+        
+    </script>
+    
+</body>
+</html> 

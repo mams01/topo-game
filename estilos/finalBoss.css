@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/***************************************************************************************
+
+           PANTALLA DE INICIO
+
+**********************************************************************************************/
+/* #texto-nivel{
+    color: white;
+    font-size: 3vw;
+}
+#bienvenidosNivel2{
+    background-color: red;
+    width: 50vw;
+    height: 30vw;
+    margin-top: 8vw;
+    margin-left: 25vw;
+}
+#iniciarJuego{
+    font-size: 1vw;
+    margin-left: 23vw;
+    margin-top: 5vw;
+    padding-top: 0.5vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    padding-bottom: 0.5vw;
+    border-radius: 10%;
+}
+#nivel{
+    color: white;
+    font-size: 2vw;
+    margin-left: 6vw;
+    padding-top: 5vw;
+} */
+#contenedorInicioJuego{
+    background-image: url(../imagenes/fondoInicioJuego.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+#nivel{
+color: white;
+font-family: 'Dancing Script', cursive;
+font-size: 3vw;
+margin-top: 20vh;
+margin-left: 23vw;
+box-sizing: border-box;
+}
+
+#iniciarJuego{
+ position: relative;
+ display: block;
+ color: white;
+ font-size: 50px;
+ text-decoration: none;
+ margin-left: 40vw;
+ margin-top: 4vw;
+ border: 2px solid #1a613a;
+ border-radius: 5px;
+ padding: 14px 60px;
+ text-transform: uppercase;
+ overflow: hidden;
+ transition: 1s all ease;
+ background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+#iniciarJuego:hover{
+transform: translateY(100%);
+background-color: red;
+color: white;
+}
+ 
+
+
+#text-nivel{
+font-family: 'Dancing Script', cursive;
+
+}
+#bienvenidosNivel4{
+
+padding-top: 10vh;
+    
+
+
+
+
+}
+
+/***************************************************************************************
+
+            JUGAR
+
+***************************************************************************************/
+#contenedorInicioNivel1{
+    display: none;
+}
+#contenedor-texto-nivel{
+    float: left;
+    background-color: transparent;
+    width: 4vw;
+    height: 35vw;
+    margin-top: 6vw;
+    margin-left: 15vw;
+    border-radius: 5%;
+    font-family: 'Dancing Script', cursive;
+}
+#texto-nivel{
+    margin-top: 13vh;
+    color: white;
+    font-size: 1.8vw;
+}
+#texto-nivel:hover{
+    margin-top: 5.5vw;
+    color: yellow;
+    font-size: 2vw;
+}
+#fondo-de-pantalla{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../imagenes/arena6.png);
+    background-size: 100% 100%;
+
+}
+.contenedor{
+    width: 50%;
+    height: 100vh;
+    /* background-image: url(../imagenes/arena.jpg); */
+    background-color: transparent;
+    background-position: center center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: 10%;
+    box-sizing: border-box;
+    float: left;
+    border: 1px white solid;
+}
+.contenedor2{
+    background-color: /* red */ rgba(0, 0, 0, 0.3);
+    width: 10%;
+    height: 100vh;
+    box-sizing: border-box;
+    float: left;
+}
+#puntuacion{
+    background-color: transparent;
+    width: 80%;
+    height: 6vw;
+    margin-left: 10%;
+    margin-top: 2.5vw;
+    color: white;
+    font-size: 1.3vw;
+    padding-top: 1.5vw;
+    padding-left: 2vw;
+    box-sizing: border-box;
+    border-radius: 10%;
+    border: 1px solid white;
+    font-family: 'Dancing Script', cursive;
+}
+.contenedor2-1{
+    background-color: transparent;
+    width: 80%;
+    height: 6vw;
+    margin-left: 10%;
+    margin-top: 2.5vw;
+    border-radius: 10%;
+    border: 1px solid white;
+    font-family: 'Dancing Script', cursive;
+    
+}
+.contenedor2 p{
+    
+    padding-left: 1.6vw;
+}
+
+#puntos{
+    color: white;
+    font-size: 1.3vw;
+    /* padding-left: 1.6vw; */ /* se corrige el inicial */
+    
+}
+#tiempo{
+    color: white;
+    font-size: 1.3vw;
+    padding-left: 1.6vw;
+}
+#contenedor2-2{
+    background-color: transparent;
+    width: 80%;
+    height: 6vw;
+    margin-left: 10%;
+    margin-top: 2.5vw;
+    border-radius: 10%;
+    border: 1px solid white; 
+    
+}
+#musica{
+    background-color: transparent;
+    /* color: white; */
+    font-size: 1.3vw;
+    margin-left: 1.4vw;
+    margin-top: 1.6vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    border-radius: 10%;
+    border: 1px solid white;
+}
+#musica a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+}
+#musica:hover{
+    background-color: red;
+    margin-top: 2vw;
+    /* margin-left: 0.5vw; */
+    
+}
+#pausa-play{
+    color: white;
+    font-size: 1.5vw;
+    padding-top: 2vw;
+    margin-left: 0vw;
+    display: none;
+    
+    font-family: 'Dancing Script', cursive;
+}
+#stop{
+    color: white;
+    font-size: 1.5vw;
+    margin-left: 1vw;
+    display: none;
+}
+#creditos{
+    background-color: green;
+    width: 80%;
+    height: 6vw;
+    margin-left: 10%;
+    margin-top: 2.5vw;
+    text-decoration: none;
+}
+#creditos p{
+    color: red;
+    font-size: 1.3vw;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+#creditos button{
+    background-color: yellow;
+    margin-top: 2vw;
+    margin-left: 0.5vw;
+}
+#creditos button:hover{
+    background-color: white;
+    margin-top: 2vw;
+    margin-left: 0.5vw;
+}
+#creditos a{
+    text-decoration: none;
+}
+/***************************************************************************************
+
+                                                PERDISTES
+
+***************************************************************************************/
+/* #contenedorPerdistesJuego{
+    display: none; 
+    background-color: red;
+    width: 50vw;
+    height: 30vw;
+    margin-top: 8vw;
+    margin-left: 25vw;
+    
+}
+#perdistesNivel-1{
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+    padding-top: 8vw;
+}
+
+#reiniciarNivel{
+    float: left;
+    font-size: 1vw;
+    margin-left: 18vw;
+    margin-top: 5vw;
+    padding-top: 0.5vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    padding-bottom: 0.5vw;
+    border-radius: 10%;
+}
+#salir{
+    float: left;
+    font-size: 1vw;
+    margin-left: 5vw;
+    margin-top: 5vw;
+    padding-top: 0.5vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-bottom: 0.5vw;
+    border-radius: 10%;
+} */
+/**************************************************************************************
+
+                        FINAL BOSS
+
+**************************************************************************************/
+#boss{
+float: center;
+background-image: url(../imagenes/señorTopo.gif);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+width: 15vw;
+height: 15vw;
+margin-left: 15vw;
+margin-top: 10vw;
+    
+}
+#hp-boss{
+float: left;
+background-color: black ;
+width: 3vw;
+height: 98.5vh;
+margin-top: 1vh;
+margin-left: -53.2vw;
+border: 1px solid white;
+box-sizing: border-box;
+    
+}
+#hp{
+float: left;
+color: white;
+margin-left: -52.8vw;
+margin-top: 47vh;
+font-size: 0.8vw;
+}
+#hp1{
+float: left;
+color: white;
+margin-left: -52.8vw;
+margin-top: 50vh;
+font-size: 0.8vw;
+
+}
+/*  RELOJ*/
+#reloj{
+    margin-top: 2vh;
+    margin-left: 2vw;
+    /* background-color : transparent; */
+    
+    font-family : Verdana, Arial, Helvetica;
+    font-size : 8pt;
+    
+}
+#reloj input{
+    background-color : transparent;
+    color : White;
+    text-align : center;
+}
+
+

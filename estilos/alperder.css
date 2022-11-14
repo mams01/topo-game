@@ -1,0 +1,100 @@
+/* #contenedorPerdistesJuego{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    color: blue;
+    margin-left: 750px;
+    margin-top: 200px;
+    transform: translate(-50%, -50%);
+    font-size:120px;
+    font-family: 'Montserrat', sans-serif;
+	letter-spacing:0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(164, 255, 45);
+    text-shadow: 
+						8px 8px #12421d,
+						20px 20px #000000;;
+
+} */
+#fondo_perdistes{
+    display: none;
+    background-image: url(../imagenes/granja_abandonada.webp);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+   
+    background-position: center center;
+    box-sizing: border-box;
+}
+/* #contenedorPerdistesJuego{
+    
+    background-color: red;
+    width: 50vw;
+    height: 30vw;
+    margin-top: 8vw;
+    margin-left: 25vw;
+} */
+#bienvenidosNivel2{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 50vw;
+    height: 100vh;
+    margin: auto;
+    padding-top: 15vh;
+    box-sizing: border-box;
+    
+}
+#perdistesNivel-1{
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+    padding-top: 8vw;
+    font-family: 'Dancing Script', cursive;
+}
+#reiniciarNivel{
+    float: left;
+    font-size: 1vw;
+    margin-left: 12vw;
+    margin-top: 5vw;
+    padding-top: 0.5vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    padding-bottom: 0.5vw;
+    border-radius: 30%;
+    font-family: 'Dancing Script', cursive;
+}
+#reiniciarNivel:hover{
+    color: white;
+    background-color: red;
+    border: 1px solid white;
+    padding-top: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 1vw;
+    margin-top: 4.5vw;
+    margin-left: 11.5vw;
+}
+
+#salir{
+    float: left;
+    font-size: 1vw;
+    margin-left: 5vw;
+    margin-top: 5vw;
+    padding-top: 0.5vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 0.5vw;
+    border-radius: 30%;
+    font-family: 'Dancing Script', cursive;
+}
+#salir:hover{
+    color: white;
+    background-color: red;
+    border: 1px solid white;
+    padding-top: 1vw;
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+    padding-bottom: 1vw;
+    margin-top: 4.5vw;
+    margin-left: 4.5vw;
+}

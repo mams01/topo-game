@@ -1,0 +1,697 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#contenedorInicioNivel1{
+    display: none;
+}
+#contenedor-texto-nivel{
+    float: left;
+    /* background-color: rgba(0, 0, 0, 0.05); */
+    width: 4vw;
+    height: 24vw;
+    margin-top: 13vw;
+    margin-left: 15vw;
+    border-radius: 5%;
+    font-family: 'Dancing Script', cursive;
+}
+#texto-nivel{
+    font-size: 2vw;
+    color: white;
+}
+#texto-nivel:hover{
+    color: yellow;
+    font-size: 2.5vw;
+}
+/* #bienvenidosNivel4{
+    background-color: transparent;
+    width: 50vw;
+    height: 30vw;
+    margin-top: 8vw;
+    margin-left: 0vw;
+} */
+#iniciarJuego{
+    font-size: 1vw;
+    margin-left: 23vw;
+    margin-top: 5vw;
+    padding-top: 0.5vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    padding-bottom: 0.5vw;
+    border-radius: 10%;
+}
+#nivel{
+    color: white;
+    font-size: 2vw;
+    margin-left: 21vw;
+    padding-top: 5vw;
+}
+.contenedor{
+    width: 50%;
+    height: 100vh;
+    /* background-image: url(../imagenes/arena.jpg); */
+    background-color: transparent;
+    background-position: center center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: 10%;
+    box-sizing: border-box;
+    float: left;
+    border: 1px white solid;
+}
+.contenedor2{
+    background-color: /* red */ rgba(0, 0, 0, 0.3);
+    width: 10%;
+    height: 100vh;
+    box-sizing: border-box;
+    float: left;
+}
+#puntuacion{
+    background-color: transparent;
+    width: 80%;
+    height: 6vw;
+    margin-left: 10%;
+    margin-top: 2.5vw;
+    color: white;
+    font-size: 1.3vw;
+    padding-top: 1.5vw;
+    padding-left: 2vw;
+    box-sizing: border-box;
+    border-radius: 10%;
+    border: 1px solid white;
+    font-family: 'Dancing Script', cursive;
+}
+
+#rip1{
+    display: none;
+    float: left;
+    background-image: url(../imagenes/rip.png);
+    /* width: 10px;
+    height: 10px; */
+}
+.contenedor2-1{
+    background-color: transparent;
+    width: 80%;
+    height: 6vw;
+    margin-left: 10%;
+    margin-top: 2.5vw;
+    border-radius: 10%;
+    border: 1px solid white;
+    font-family: 'Dancing Script', cursive;
+    
+}
+.contenedor2 p{
+    
+    padding-left: 1.6vw;
+}
+
+#puntos{
+    color: white;
+    font-size: 1.3vw;
+    /* padding-left: 1.6vw; */ /* se corrige el inicial */
+    
+}
+#tiempo{
+    color: white;
+    font-size: 1.3vw;
+    padding-left: 1.6vw;
+}
+#contenedor2-2{
+    background-color: transparent;
+    width: 80%;
+    height: 6vw;
+    margin-left: 10%;
+    margin-top: 2.5vw;
+    border-radius: 10%;
+    border: 1px solid white; 
+}
+#musica{
+    background-color: transparent;
+    /* color: white; */
+    font-size: 1.3vw;
+    margin-left: 1.4vw;
+    margin-top: 1.6vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    border-radius: 10%;
+    border: 1px solid white;
+}
+#musica a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+}
+#musica:hover{
+    background-color: red;
+    margin-top: 2vw;
+    /* margin-left: 0.5vw; */
+    
+}
+#pausa-play{
+    color: white;
+    font-size: 1.5vw;
+    padding-top: 2vw;
+    margin-left: 0vw;
+    display: none;
+    
+    font-family: 'Dancing Script', cursive;
+}
+#contenedor2-2 a{
+    text-decoration: none;
+}
+#stop{
+    color: white;
+    font-size: 1.5vw;
+    margin-left: 1vw;
+    display: none;
+}
+#hueco{
+    float: left;
+    margin-top: 9vw;
+    margin-left: 5vw;
+    width: 8vw;
+    height: 2.5vw;
+    position: relative;
+    
+}  
+#topo1{
+    float: left;
+    margin-top: 5vw;
+    margin-left: -5.8vw; 
+    /* position: relative; */
+    transition: all 5s;
+    width: 3.8vw;
+    height: 4.75vw;
+    /* animation-name: muevete_topo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; */
+    
+    
+}
+
+.posicion1{
+    margin-left: 3.75vw;
+    box-sizing: border-box;
+}
+#hp-topo1{
+    background-color: blue;
+    border: 0.1vw groove white;
+    width: 5vw;
+    height: 0.75vw;
+    float: left;
+    margin-left: -6vw;
+    margin-top: 3.5vw;
+    box-sizing: border-box;
+    
+    
+}
+#hp-topo1 p{
+    color: white;
+    font-size: 0.72vw;
+    margin-top: -0.1vw;
+    margin-left: 1.7vw;
+    
+}
+#golpe1{
+    float: left;
+    background-image: url(../imagenes/golpe_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vw;
+    /* position: relative; */
+    margin-left: -5vw;
+    margin-top: 3.5vw;
+    display: none;
+    /* visibility: hidden; */
+}
+/**/
+
+/*****************************************************************************************/
+#topo2{
+    float: left;
+    margin-top: 5vw;
+    margin-left: -5.8vw; 
+    /* position: relative; */
+    transition: all 5s;
+    width: 3.8vw;
+    height: 4.75vw;
+}
+#hp-topo2{
+    background-color: blue;
+    border: 0.1vw groove white;
+    width: 5vw;
+    height: 0.75vw;
+    float: left;
+    margin-left: -6vw;
+    margin-top: 3.5vw;
+    box-sizing: border-box;
+}
+#hp-topo2 p{
+    color: white;
+    font-size: 0.72vw;
+    margin-top: -0.1vw;
+    margin-left: 1.7vw;
+    
+}
+#golpe2{
+    float: left;
+    background-image: url(../imagenes/golpe_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vw;
+    /* position: relative; */
+    margin-left: -5vw;
+    margin-top: 3.5vw;
+    display: none;
+    /* visibility: hidden; */
+}
+/*******************************************************************************************/
+#topo3{
+    float: left;
+    margin-top: 5vw;
+    margin-left: -5.8vw; 
+    /* position: relative; */
+    transition: all 5s;
+    width: 3.8vw;
+    height: 4.75vw;
+}
+#hp-topo3{
+    background-color: blue;
+    border: 0.1vw groove white;
+    width: 5vw;
+    height: 0.75vw;
+    float: left;
+    margin-left: -6vw;
+    margin-top: 3.5vw;
+    box-sizing: border-box;
+}
+#hp-topo3 p{
+    color: white;
+    font-size: 0.72vw;
+    margin-top: -0.1vw;
+    margin-left: 1.7vw;
+    
+}
+#golpe3{
+    float: left;
+    background-image: url(../imagenes/golpe_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vw;
+    /* position: relative; */
+    margin-left: -5vw;
+    margin-top: 3.5vw;
+    display: none;
+    /* visibility: hidden; */
+}
+/**********************************************************************************************/
+#topo4{
+    float: left;
+    margin-top: 5vw;
+    margin-left: -5.8vw; 
+    /* position: relative; */
+    transition: all 5s;
+    width: 3.8vw;
+    height: 4.75vw;
+}
+#hp-topo4{
+    background-color: blue;
+    border: 0.1vw groove white;
+    width: 5vw;
+    height: 0.75vw;
+    float: left;
+    margin-left: -6vw;
+    margin-top: 3.5vw;
+    box-sizing: border-box;
+}
+#hp-topo4 p{
+    color: white;
+    font-size: 0.72vw;
+    margin-top: -0.1vw;
+    margin-left: 1.7vw;
+    
+}
+#golpe4{
+    float: left;
+    background-image: url(../imagenes/golpe_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vw;
+    /* position: relative; */
+    margin-left: -5vw;
+    margin-top: 3.5vw;
+    display: none;
+    /* visibility: hidden; */
+}
+/**********************************************************************************************/
+#topo5{
+    float: left;
+    margin-top: 5vw;
+    margin-left: -5.8vw; 
+    /* position: relative; */
+    transition: all 5s;
+    width: 3.8vw;
+    height: 4.75vw;
+}
+#hp-topo5{
+    background-color: blue;
+    border: 0.1vw groove white;
+    width: 5vw;
+    height: 0.75vw;
+    float: left;
+    margin-left: -6vw;
+    margin-top: 3.5vw;
+    box-sizing: border-box;
+}
+#hp-topo5 p{
+    color: white;
+    font-size: 0.72vw;
+    margin-top: -0.1vw;
+    margin-left: 1.7vw;
+    
+}
+#golpe5{
+    float: left;
+    background-image: url(../imagenes/golpe_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vw;
+    /* position: relative; */
+    margin-left: -5vw;
+    margin-top: 3.5vw;
+    display: none;
+    /* visibility: hidden; */
+}
+/**********************************************************************************************/
+#topo6{
+    float: left;
+    margin-top: 5vw;
+    margin-left: -5.8vw; 
+    /* position: relative; */
+    transition: all 5s;
+    width: 3.8vw;
+    height: 4.75vw;
+}
+#hp-topo6{
+    background-color: blue;
+    border: 0.1vw groove white;
+    width: 5vw;
+    height: 0.75vw;
+    float: left;
+    margin-left: -6vw;
+    margin-top: 3.5vw;
+    box-sizing: border-box;
+}
+#hp-topo6 p{
+    color: white;
+    font-size: 0.72vw;
+    margin-top: -0.1vw;
+    margin-left: 1.7vw;
+    
+}
+#golpe6{
+    float: left;
+    background-image: url(../imagenes/golpe_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vw;
+    /* position: relative; */
+    margin-left: -5vw;
+    margin-top: 3.5vw;
+    display: none;
+    /* visibility: hidden; */
+}
+/**********************************************************************************************/
+#topo7{
+    float: left;
+    margin-top: 5vw;
+    margin-left: -5.8vw; 
+    /* position: relative; */
+    transition: all 5s;
+    width: 3.8vw;
+    height: 4.75vw;
+}
+#hp-topo7{
+    background-color: blue;
+    border: 0.1vw groove white;
+    width: 5vw;
+    height: 0.75vw;
+    float: left;
+    margin-left: -6vw;
+    margin-top: 3.5vw;
+    box-sizing: border-box;
+}
+#hp-topo7 p{
+    color: white;
+    font-size: 0.72vw;
+    margin-top: -0.1vw;
+    margin-left: 1.7vw;
+    
+}
+#golpe7{
+    float: left;
+    background-image: url(../imagenes/golpe_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vw;
+    /* position: relative; */
+    margin-left: -5vw;
+    margin-top: 3.5vw;
+    display: none;
+    /* visibility: hidden; */
+}
+/**********************************************************************************************/
+#topo8{
+    float: left;
+    margin-top: 5vw;
+    margin-left: -5.8vw; 
+    /* position: relative; */
+    transition: all 5s;
+    width: 3.8vw;
+    height: 4.75vw;
+}
+#hp-topo8{
+    background-color: blue;
+    border: 0.1vw groove white;
+    width: 5vw;
+    height: 0.75vw;
+    float: left;
+    margin-left: -6vw;
+    margin-top: 3.5vw;
+    box-sizing: border-box;
+}
+#hp-topo8 p{
+    color: white;
+    font-size: 0.72vw;
+    margin-top: -0.1vw;
+    margin-left: 1.7vw;
+    
+}
+#golpe8{
+    float: left;
+    background-image: url(../imagenes/golpe_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vw;
+    /* position: relative; */
+    margin-left: -5vw;
+    margin-top: 3.5vw;
+    display: none;
+    /* visibility: hidden; */
+}
+/**********************************************************************************************/
+#topo9{
+    float: left;
+    margin-top: 5vw;
+    margin-left: -5.8vw; 
+    /* position: relative; */
+    transition: all 5s;
+    width: 3.8vw;
+    height: 4.75vw;
+}
+#hp-topo9{
+    background-color: blue;
+    border: 0.1vw groove white;
+    width: 5vw;
+    height: 0.75vw;
+    float: left;
+    margin-left: -6vw;
+    margin-top: 3.5vw;
+    box-sizing: border-box;
+}
+#hp-topo9 p{
+    color: white;
+    font-size: 0.72vw;
+    margin-top: -0.1vw;
+    margin-left: 1.7vw;
+    
+}
+#golpe9{
+    float: left;
+    background-image: url(../imagenes/golpe_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vw;
+    /* position: relative; */
+    margin-left: -5vw;
+    margin-top: 3.5vw;
+    display: none;
+    /* visibility: hidden; */
+}
+/**********************************************************************************************/
+#topo10{
+    float: left;
+    margin-top: 5vw;
+    margin-left: -5.8vw; 
+    /* position: relative; */
+    transition: all 5s;
+    width: 3.8vw;
+    height: 4.75vw;
+}
+#hp-topo10{
+    background-color: blue;
+    border: 0.1vw groove white;
+    width: 5vw;
+    height: 0.75vw;
+    float: left;
+    margin-left: -6vw;
+    margin-top: 3.5vw;
+    box-sizing: border-box;
+}
+#hp-topo10 p{
+    color: white;
+    font-size: 0.72vw;
+    margin-top: -0.1vw;
+    margin-left: 1.7vw;
+    
+}
+#golpe10{
+    float: left;
+    background-image: url(../imagenes/golpe_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vw;
+    /* position: relative; */
+    margin-left: -5vw;
+    margin-top: 3.5vw;
+    display: none;
+    /* visibility: hidden; */
+}
+/**********************************************************************************************/
+#topo11{
+    float: left;
+    margin-top: 5vw;
+    margin-left: -5.8vw; 
+    /* position: relative; */
+    transition: all 5s;
+    width: 3.8vw;
+    height: 4.75vw;
+}
+#hp-topo11{
+    background-color: blue;
+    border: 0.1vw groove white;
+    width: 5vw;
+    height: 0.75vw;
+    float: left;
+    margin-left: -6vw;
+    margin-top: 3.5vw;
+    box-sizing: border-box;
+}
+#hp-topo11 p{
+    color: white;
+    font-size: 0.72vw;
+    margin-top: -0.1vw;
+    margin-left: 1.7vw;
+    
+}
+#golpe11{
+    float: left;
+    background-image: url(../imagenes/golpe_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vw;
+    /* position: relative; */
+    margin-left: -5vw;
+    margin-top: 3.5vw;
+    display: none;
+    /* visibility: hidden; */
+}
+/**********************************************************************************************/
+#topo12{
+    float: left;
+    margin-top: 5vw;
+    margin-left: -5.8vw; 
+    /* position: relative; */
+    transition: all 5s;
+    width: 3.8vw;
+    height: 4.75vw;
+}
+#hp-topo12{
+    background-color: blue;
+    border: 0.1vw groove white;
+    width: 5vw;
+    height: 0.75vw;
+    float: left;
+    margin-left: -6vw;
+    margin-top: 3.5vw;
+    box-sizing: border-box;
+}
+#hp-topo12 p{
+    color: white;
+    font-size: 0.72vw;
+    margin-top: -0.1vw;
+    margin-left: 1.7vw;
+    
+}
+#golpe12{
+    float: left;
+    background-image: url(../imagenes/golpe_1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vw;
+    /* position: relative; */
+    margin-left: -5vw;
+    margin-top: 3.5vw;
+    display: none;
+    /* visibility: hidden; */
+}
+/**********************************************************************************************/
+/**********************************************************************************************/
+#fondo-de-pantalla{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../imagenes/arena6.png);
+    background-size: 100% 100%;
+
+}
+
+/*  RELOJ*/
+#reloj{
+    margin-top: 2vh;
+    margin-left: 2vw;
+    /* background-color : transparent; */
+    
+    font-family : Verdana, Arial, Helvetica;
+    font-size : 8pt;
+    
+}
+#reloj input{
+    background-color : transparent;
+    color : White;
+    text-align : center;
+}

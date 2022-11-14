@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia</title>
+    <link rel="stylesheet" href="estilos/historia.css">
+    
+</head>
+<body onload="intro1()">
+<div background="../juego-topo/imagenes/dd.jpg" >
+    
+        <h1><span>H</span><span>I</span><span>S</span><span>T</span><span>O</span><span></span><span>R</span><span>I</span><span>A</span> <br>
+    <div id="Texto"><h6 id="borde">Un topo en mi jardín
+        Felipe es un topo que aparece en el jardín 
+        de la casa de Quique y su hermano pequeño, Teo. 
+        El topo les explica que hace mucho rato que corría 
+        por los túneles y galerías que había hecho bajo tierra 
+        y que no conseguía encontrar el camino hacia su casa. 
+        Resulta que todos los agujeros tenían alguna trampa. 
+        Felipe está muy triste y Quique y Teo le quieren ayudar. 
+        Para eso ellos tendrán que bajar bajo tierra. Junto a Felipe, 
+        los dos hermanos vivirán una aventura subterránea, descubrirán 
+        todo un mundo y cuando vuelvan a subir a la superficie serán 
+        conscientes de lo que hay bajo sus pies y lo importante 
+        que es respetarlo.</h6>
+    </div>
+        <div class="wrapper">
+            <a class="button" href="niveles_topoSmash/nivel1.html">JUGAR</a>
+        </div>
+        <div class="wrapper1">
+            <a class="button1" href="niveles_topoSmash/tutorial.html">TUTORIAL</a>
+        </div>
+
+        <!-- Filter: https://css-tricks.com/gooey-effect/ -->
+        <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                    <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                </filter>
+            </defs>
+        </svg>
+</div>
+
+<script src="../javascript/finalBoss.js"></script>
+    
+</body>
+</html>

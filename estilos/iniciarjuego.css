@@ -1,0 +1,73 @@
+#contenedorInicioJuego{
+    background-image: url("https://img.freepik.com/vector-gratis/escena-granja-naturaleza-granero_1308-34080.jpg?t=st=1655175536~exp=1655176136~hmac=5a1995b8a70dc16a0fefbab5d29a7ea582f4d617ec8017363eea49fc777f63af&w=740");
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+#contenedorInicioJuego article{
+  padding-left: 6vw;
+}
+
+#bienvenidosNivel2{
+  
+    padding-top: 10vh;
+    
+
+
+
+
+}
+ #nivel{
+    
+  margin-left: 750px;
+  margin-top: 200px;
+  transform: translate(-50%, -50%);
+  font-size:120px;
+  font-family: 'Montserrat', sans-serif;
+	letter-spacing:0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 
+						8px 8px #12421d,
+						20px 20px #000000;;
+  
+
+ }
+
+ #iniciarJuego{
+  position: relative;
+  display: block;
+  color: white;
+  font-size: 50px;
+  text-decoration: none;
+  margin-left: 530px;
+  margin-bottom: 400px;
+  border: 2px solid #1a613a;
+  border-radius: 5px;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+  background-color: rgba(0, 0, 0, 0.3);
+
+ }
+
+ #iniciarJuego:hover{
+  transform: translateY(100%);
+  background-color: red;
+  color: white;
+ }
+  
+
+
+ #text-nivel2{
+  font-family: 'Dancing Script', cursive;
+
+ }
+

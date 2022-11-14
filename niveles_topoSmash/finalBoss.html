@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinalBoss</title>
+    <link rel="stylesheet" href="../estilos/finalBoss.css">
+    <link rel="stylesheet" href="../estilos/alperder.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Zen+Loop&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- PANTALLA DE INICIO -->
+    <div id="contenedorInicioJuego">
+        <article >
+            <div id="bienvenidosNivel4">
+                <div >
+                    <p id="nivel"> PREPARATE PARA LA BATALLA FINAL !!!!</p>
+                    <button id="iniciarJuego" onclick="iniciarJuego()"><p id="text-nivel">INICIAR</p> </button>
+                </div>
+            </div>
+        </article>
+    </div>
+    <!-- AL INICIAR JUEGO -->
+    <div id="contenedorInicioNivel1">  
+        <div  id="fondo-de-pantalla">
+            <div id="contenedor-texto-nivel" >
+                <p id="texto-nivel">
+                    &nbsp;F <br>
+                    &nbsp;I <br>
+                    &nbsp;N <br>
+                    &nbsp;A <br>
+                    &nbsp;L <br>
+                    <br>
+                    &nbsp;B <br>
+                    &nbsp;O <br>
+                    &nbsp;S <br>
+                    &nbsp;S <br>
+                </p>
+            </div>
+            <div class="contenedor">
+                <div id="boss" onclick="general()"> 
+                    <!-- CONTENIDO -->
+                </div>
+                
+
+               
+
+                <div id="rip"> </div>
+                <div id="golpe2"></div>
+            </div>
+            <div id="hp-boss" ></div>
+            <div id="hp"></div>
+            <div id="hp1">
+                <p > 9 
+                     9 
+                     9  
+                       
+                </p>
+            </div>
+            <div class="contenedor2" >
+                <div id="puntuacion">
+                    
+                </div>
+                <div class="contenedor2-1">
+                    
+                    <div id="tiempo">
+                
+                    </div>
+                    <div id="puntos"> 
+                        <p>PUNTOS &nbsp;&nbsp;&nbsp;&nbsp;0/50</p><!-- inicial -->
+                    </div>
+                </div>
+                <div id="contenedor2-2">  <!-- CONTENEDOR PARA PAUSAR / REPRODUCIR Y COLOCAR EN STOP A LA MUSICA DE FONDO -->
+                    <button id="musica" onclick="optionMusica()"><a href="#">MUSIC</a> </button>      <!--  BOTON MUSICA AL DARLE CLICK SE TRANSFORMA -->
+                    <p id="pausa-play" onclick="musicaFondo()">PAUSE</p>        <!--  TEXTO PAUSA / PLAY CON FUNCION PARA REPRODUCIR LA MUSICA -->
+                    <!-- <p id="stop" onclick="stop()">stop</p>   -->                           <!--  TEXTO STOP PARA DETENER LA REPRODUCCION DE MUSICA -->
+                </div> 
+                <!-- <div id="creditos">
+                    <button><a  href="Creditos.html"><p>CREDITOS</p></a></button>  
+                </div> -->
+                <div id="reloj">
+                    <form name="form_reloj">
+                        <!-- <input type="text" name="reloj" size="10"> -->
+                        <input type="text" name="reloj" size="10" >
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SI EL TIEMPO LLEGA A 0 -->
+    <div id="fondo_perdistes">
+        <div id="contenedorPerdistesJuego">
+            <div id="bienvenidosNivel2">
+                <p id="perdistesNivel-1">uppps!! lo siento perdistes</p>
+                <button id="reiniciarNivel" onclick="reiniciarNivel()"><p id="text-nivel1">VOLVER A INTENTARLO</p> </button>
+                <button id="salir" onclick="salir()"><p id="text-nivel1">SALIR</p> </button>
+            </div>
+        </div> 
+    </div>
+    <!-- SCRIPT -->
+    <script src="../javascript/puntuacion.js"></script>
+    <script src="../javascript/finalBoss.js"></script>
+</body>
+</html>
+
