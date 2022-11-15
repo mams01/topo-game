@@ -1,6 +1,6 @@
 puntos = 0;
 tiempo =  80 ;
-vidaBoss= 999;
+vidaBoss= 610;
 dañoXgolpe = 10;
 
 puntosPasarNivel = 50; /* puntos */
