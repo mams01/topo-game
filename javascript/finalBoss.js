@@ -252,76 +252,76 @@ function boss(){
         document.getElementById("hp").textContent = hpBoss + " " + "/";
         document.getElementById("hp").style = "color:white", "font-size: 0.7vw;";
         document.getElementById("puntuacion").innerHTML = "SCORE" + "<br>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + score;
-        if (hpBoss <= 999){
+        if (hpBoss <= 500){
             fx1();
             document.getElementById("hp-boss").style.backgroundColor = "purple";
             /* document.getElementById("boss").style = "width: 3vw", "height: 3vw"; */
             
-        }if (hpBoss <= 990){
+        }if (hpBoss <= 450){
             fx3();
             document.getElementById("hp-boss").style.backgroundColor = "purple";
             /* document.getElementById("boss").style = "width: 3vw", "height: 3vw"; */
             
-        }if (hpBoss <= 800){
+        }if (hpBoss <= 400){
             fx2();
             document.getElementById("hp-boss").style.backgroundColor = "darkviolet";
             /* document.getElementById("boss").style = "width: 7vw", "height: 7vw"; */
-            document.getElementById("boss").style.backgroundImage = "url(../imagenes/senorTopoBoss.gif)"     
+            document.getElementById("boss").style.backgroundImage = "url(../imagenes/topo-.gif)"     
             document.getElementById("fondo-de-pantalla").style.backgroundImage = "url(../imagenes/arena7.png)" 
             
-        }if (hpBoss <= 700){
+        }if (hpBoss <= 350){
             fx3();
             document.getElementById("hp-boss").style.backgroundColor = "violet";  
             /* document.getElementById("boss").style = "width: 8vw", "height: 8vw"; */
-            document.getElementById("boss").style.backgroundImage = "url(../imagenes/senorTopoBoss.gif)"     
-        }if (hpBoss <= 600){
+            document.getElementById("boss").style.backgroundImage = "url(../imagenes/topo-.gif)"     
+        }if (hpBoss <= 300){
             document.getElementById("hp-boss").style.backgroundColor = "darkgreen";  
             /* document.getElementById("boss").style = "width: 9vw", "height: 9vw";   */
-            document.getElementById("boss").style.backgroundImage = "url(../imagenes/senorTopoBoss.gif)"   
-        }if (hpBoss <= 500){
+            document.getElementById("boss").style.backgroundImage = "url(../imagenes/topo-.gif)"   
+        }if (hpBoss <= 250){
             document.getElementById("hp-boss").style.backgroundColor = "green"; 
             /* document.getElementById("boss").style = "width: 10vw", "height: 10vw";  */
-            document.getElementById("boss").style.backgroundImage = "url(../imagenes/senorTopoBoss.gif)"
+            document.getElementById("boss").style.backgroundImage = "url(../imagenes/topo-.gif)"
                 
-        }if (hpBoss <= 450){
-            document.getElementById("hp-boss").style.backgroundColor = "lightgreen";  
-            document.getElementById("boss").style.backgroundImage = "url(../imagenes/senorTopoBoss.gif)"     
-        }if (hpBoss <= 400){
-            document.getElementById("hp-boss").style.backgroundColor = "darkblue";  
-            document.getElementById("boss").style.backgroundImage = "url(../imagenes/senorTopoBoss.gif)"    
-        }if (hpBoss <= 350){
-            document.getElementById("hp-boss").style.backgroundColor = "blue"; 
-            document.getElementById("boss").style.backgroundImage = "url(../imagenes/senorTopoBoss.gif)"      
-        }if (hpBoss <= 300){
-            document.getElementById("hp-boss").style.backgroundColor = "lightblue"; 
-            document.getElementById("boss").style.backgroundImage = "url(../imagenes/senorTopoBoss.gif)"      
-        }if (hpBoss <= 250){
-            document.getElementById("hp-boss").style.backgroundColor = "darkorange";   
-            document.getElementById("boss").style.backgroundImage = "url(../imagenes/senorTopoBoss.gif)"    
         }if (hpBoss <= 200){
-            document.getElementById("hp-boss").style.backgroundColor = "orange"; 
-            document.getElementById("boss").style.backgroundImage = "url(../imagenes/senorTopoBoss.gif)"      
+            document.getElementById("hp-boss").style.backgroundColor = "lightgreen";  
+            document.getElementById("boss").style.backgroundImage = "url(../imagenes/topo-.gif)"     
         }if (hpBoss <= 150){
-            document.getElementById("hp-boss").style.backgroundColor = "lightcoral";  
-            document.getElementById("boss").style.backgroundImage = "url(../imagenes/senorTopoBoss.gif)"     
+            document.getElementById("hp-boss").style.backgroundColor = "darkblue";  
+            document.getElementById("boss").style.backgroundImage = "url(../imagenes/topo-.gif)"    
         }if (hpBoss <= 100){
-            document.getElementById("hp-boss").style.backgroundColor = "yellowgreen";     
-            document.getElementById("boss").style.backgroundImage = "url(../imagenes/senorTopoBoss.gif)"  
+            document.getElementById("hp-boss").style.backgroundColor = "blue"; 
+            document.getElementById("boss").style.backgroundImage = "url(../imagenes/topo-.gif)"      
         }if (hpBoss <= 90){
-            document.getElementById("hp-boss").style.backgroundColor = "yellow"; 
-            document.getElementById("boss").style.backgroundImage = "url(../imagenes/senorTopoBoss.gif)"      
+            document.getElementById("hp-boss").style.backgroundColor = "lightblue"; 
+            document.getElementById("boss").style.backgroundImage = "url(../imagenes/topo-.gif)"      
         }if (hpBoss <= 80){
-            document.getElementById("hp-boss").style.backgroundColor = "lightyellow";   
-            document.getElementById("boss").style.backgroundImage = "url(../imagenes/senorTopoBoss.gif)"    
+            document.getElementById("hp-boss").style.backgroundColor = "darkorange";   
+            document.getElementById("boss").style.backgroundImage = "url(../imagenes/topo-.gif)"    
         }if (hpBoss <= 70){
-            document.getElementById("hp-boss").style.backgroundColor = "pink";       
-            document.getElementById("boss").style.backgroundImage = "url(../imagenes/senorTopoBoss.gif)"
+            document.getElementById("hp-boss").style.backgroundColor = "orange"; 
+            document.getElementById("boss").style.backgroundImage = "url(../imagenes/topo-.gif)"      
         }if (hpBoss <= 60){
-            document.getElementById("hp-boss").style.backgroundColor = "darkred";   
-            document.getElementById("boss").style.backgroundImage = "url(../imagenes/senorTopoBoss.gif)"    
+            document.getElementById("hp-boss").style.backgroundColor = "lightcoral";  
+            document.getElementById("boss").style.backgroundImage = "url(../imagenes/topo-.gif)"     
         }if (hpBoss <= 50){
+            document.getElementById("hp-boss").style.backgroundColor = "yellowgreen";     
+            document.getElementById("boss").style.backgroundImage = "url(../imagenes/topo-.gif)"  
+        }if (hpBoss <= 40){
+            document.getElementById("hp-boss").style.backgroundColor = "yellow"; 
+            document.getElementById("boss").style.backgroundImage = "url(../imagenes/topo-.gif)"      
+        }if (hpBoss <= 30){
+            document.getElementById("hp-boss").style.backgroundColor = "lightyellow";   
+            document.getElementById("boss").style.backgroundImage = "url(../imagenes/topo-.gif)"    
+        }if (hpBoss <= 20){
+            document.getElementById("hp-boss").style.backgroundColor = "pink";       
+            document.getElementById("boss").style.backgroundImage = "url(../imagenes/topo-.gif)"
+        }if (hpBoss <= 10){
+            document.getElementById("hp-boss").style.backgroundColor = "darkred";   
+            document.getElementById("boss").style.backgroundImage = "url(../imagenes/topo-.gif)"    
+        }if (hpBoss <= 5){
             document.getElementById("hp-boss").style.backgroundColor = "red";      
-            document.getElementById("boss").style.backgroundImage = "url(../imagenes/senorTopoBoss.gif)" 
+            document.getElementById("boss").style.backgroundImage = "url(../imagenes/topo-.gif)" 
         }
         if (hpBoss <= 0){
             document.getElementById("hp-boss").style.backgroundColor = "transparent";
@@ -331,6 +331,7 @@ function boss(){
         }
     }
 }
+function aparecerBoss(){
 function aparecerBoss(){
     
     if (document.getElementById("boss").onclick){
